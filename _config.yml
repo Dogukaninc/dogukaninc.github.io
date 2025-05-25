@@ -1,11 +1,11 @@
 # Site settings
-title: Freelancer
-email: your-email@domain.com
-url: https://github.com/jeromelachaud/freelancer-theme
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
-keywords: "your keywords, separated by commas"
-skills: "Web Developer - Graphic Artist - User Experience Designer"
-meta_author: LastName FirstName
+title: Game Developer
+email: dogukanincirbolen@gmail.com
+url: https://github.com/Dogukaninc
+description: "Game developer which is love games since 5 years old and developing about a while"
+keywords: "Game Developer, Game Designer, Unity, C#, Mobile, Ads, IronSource, GA"
+skills: "Mobile Game Developer - Game Developer - Game Designer"
+meta_author: Incirbolen Dogukan
 
 # Google webmaster tools
 google_verify:
@@ -39,24 +39,24 @@ footer:
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
-  - title: twitter
-    url: http://twitter.com/jekyllrb
-  - title: facebook
-    url:
+  - title: Linkedin
+    url: https://www.linkedin.com/in/do%C4%9Fukan-incirb%C3%B6len-867bb21b9/
+  - title: Github
+    url: https://github.com/Dogukaninc
   - title: stack-overflow
-    url: http://stackoverflow.com/questions/tagged/jekyll
-  - title: bitbucket
-    url: http://bitbucket.org/jekyll
-  - title: github
-    url: http://github.com/jekyll
+    url: 
+  - title: Unity Learn
+    url: https://learn.unity.com/u/5fa84b2dedbc2a001f61c820?tab=profile
+  - title: Itch.io
+    url: https://dogukann.itch.io/
 
 # Postal address (add as many lines as necessary)
 address:
-  - line: 3481 Melrose Place
-  - line: Beverly Hills, CA 90210
+  - line: 
+  - line: Istanbul, Turkey
 
 # Credits content
-credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'
+credits: 'Game Developer Dogukan Incirbolen'
 
 # Build settings
 markdown: kramdown
