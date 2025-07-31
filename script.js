@@ -2,30 +2,30 @@
 const gamesData = {
     1: {
         title: "Space Shooter",
-        description: "Uzayda geçen aksiyon dolu bir shooter oyunu. Düşman uzay gemilerini yok ederek puan kazanın ve hayatta kalmaya çalışın.",
-        image: "https://via.placeholder.com/300x200/2c3e50/ffffff?text=Space+Shooter",
-        technologies: ["Unity", "C#", "2D Graphics", "Audio System"],
+        description: "Uzayda geçen aksiyon dolu bir shooter oyunu. Düşman uzay gemilerini yok ederek puan kazanın ve hayatta kalmaya çalışın. Modern grafik efektleri ve sürükleyici oynanış deneyimi sunar.",
+        image: "https://via.placeholder.com/300x200/4a90e2/ffffff?text=Space+Shooter",
+        technologies: ["Unity", "C#", "2D Graphics", "Audio System", "Particle Effects"],
         link: "https://example.com/space-shooter"
     },
     2: {
         title: "Platform Runner",
-        description: "Platform üzerinde koşma ve zıplama oyunu. Engelleri aşarak mümkün olduğunca uzağa gitmeye çalışın.",
-        image: "https://via.placeholder.com/300x200/3498db/ffffff?text=Platform+Runner",
-        technologies: ["Unity", "C#", "Physics System", "Animation"],
+        description: "Platform üzerinde koşma ve zıplama oyunu. Engelleri aşarak mümkün olduğunca uzağa gitmeye çalışın. Fizik tabanlı oynanış ve akıcı animasyonlar ile eğlenceli bir deneyim.",
+        image: "https://via.placeholder.com/300x200/9b59b6/ffffff?text=Platform+Runner",
+        technologies: ["Unity", "C#", "Physics System", "Animation", "Level Design"],
         link: "https://example.com/platform-runner"
     },
     3: {
         title: "Puzzle Adventure",
-        description: "Beyin jimnastiği gerektiren puzzle oyunu. Mantık ve strateji kullanarak bulmacaları çözün.",
-        image: "https://via.placeholder.com/300x200/e74c3c/ffffff?text=Puzzle+Adventure",
-        technologies: ["Unity", "C#", "UI System", "Save System"],
+        description: "Beyin jimnastiği gerektiren puzzle oyunu. Mantık ve strateji kullanarak bulmacaları çözün. Karmaşık seviye tasarımı ve zorlayıcı görevler ile oyuncuları test eder.",
+        image: "https://via.placeholder.com/300x200/3498db/ffffff?text=Puzzle+Adventure",
+        technologies: ["Unity", "C#", "UI System", "Save System", "Game Logic"],
         link: "https://example.com/puzzle-adventure"
     },
     4: {
         title: "Racing Game",
-        description: "Hızlı ve heyecanlı yarış oyunu. Diğer yarışçıları geçerek birinci olmaya çalışın.",
-        image: "https://via.placeholder.com/300x200/27ae60/ffffff?text=Racing+Game",
-        technologies: ["Unity", "C#", "3D Graphics", "Multiplayer"],
+        description: "Hızlı ve heyecanlı yarış oyunu. Diğer yarışçıları geçerek birinci olmaya çalışın. 3D grafikler, gerçekçi fizik ve çok oyunculu mod ile sürükleyici bir deneyim.",
+        image: "https://via.placeholder.com/300x200/8e44ad/ffffff?text=Racing+Game",
+        technologies: ["Unity", "C#", "3D Graphics", "Multiplayer", "Vehicle Physics"],
         link: "https://example.com/racing-game"
     }
 };
@@ -37,6 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeGameCards();
     initializeSmoothScrolling();
     initializeScrollEffects();
+    initializeParallaxEffects();
 });
 
 // Navigation menüsü için hamburger menü
@@ -62,7 +63,7 @@ function initializeNavigation() {
         const navbar = document.querySelector('.navbar');
         if (window.scrollY > 100) {
             navbar.style.background = 'rgba(255, 255, 255, 0.98)';
-            navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+            navbar.style.boxShadow = '0 2px 20px rgba(74, 144, 226, 0.1)';
         } else {
             navbar.style.background = 'rgba(255, 255, 255, 0.95)';
             navbar.style.boxShadow = 'none';
@@ -258,6 +259,19 @@ function initializeScrollEffects() {
     });
 }
 
+// Parallax efektleri
+function initializeParallaxEffects() {
+    window.addEventListener('scroll', function() {
+        const scrolled = window.pageYOffset;
+        const parallaxElements = document.querySelectorAll('.floating-card');
+        
+        parallaxElements.forEach(element => {
+            const speed = 0.5;
+            element.style.transform = `translateY(${scrolled * speed}px) rotate(${scrolled * 0.02}deg)`;
+        });
+    });
+}
+
 // Loading animasyonu
 window.addEventListener('load', function() {
     document.body.style.opacity = '0';
@@ -268,18 +282,7 @@ window.addEventListener('load', function() {
     }, 100);
 });
 
-// Parallax efekti için
-window.addEventListener('scroll', function() {
-    const scrolled = window.pageYOffset;
-    const parallaxElements = document.querySelectorAll('.floating-card');
-    
-    parallaxElements.forEach(element => {
-        const speed = 0.5;
-        element.style.transform = `translateY(${scrolled * speed}px)`;
-    });
-});
-
-// Typing efekti için (isteğe bağlı)
+// Typing efekti için
 function typeWriter(element, text, speed = 100) {
     let i = 0;
     element.innerHTML = '';
@@ -299,4 +302,31 @@ function typeWriter(element, text, speed = 100) {
 // const heroTitle = document.querySelector('.hero-title');
 // if (heroTitle) {
 //     typeWriter(heroTitle, 'Hoş Geldiniz!', 150);
-// } 
+// }
+
+// Hover efektleri için ek animasyonlar
+document.addEventListener('DOMContentLoaded', function() {
+    // Game card hover efektleri
+    const gameCards = document.querySelectorAll('.game-card');
+    gameCards.forEach(card => {
+        card.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-10px) scale(1.02)';
+        });
+        
+        card.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0) scale(1)';
+        });
+    });
+
+    // Button hover efektleri
+    const buttons = document.querySelectorAll('.btn');
+    buttons.forEach(button => {
+        button.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-2px)';
+        });
+        
+        button.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0)';
+        });
+    });
+});

@@ -1,10 +1,11 @@
-# 🎮 Game Developer Portfolyo Sitesi
+# 🎮 Game Developer Portfolyo Sitesi - Mavi-Mor Tema
 
-Modern, responsive ve şık bir Game Developer portfolyo sitesi. Unity ve diğer oyun geliştirme teknolojileri için özel olarak tasarlanmıştır.
+Modern, responsive ve şık bir Game Developer portfolyo sitesi. Mavi-mor gradient renk geçişleri ile Unity ve diğer oyun geliştirme teknolojileri için özel olarak tasarlanmıştır.
 
 ## ✨ Özellikler
 
-- 🎨 Modern ve responsive tasarım
+- 🎨 Modern mavi-mor gradient tema
+- 🌈 Gradient renk geçişleri ve efektler
 - 🎮 Oyun slider'ı (kaydırmalı galeri)
 - 📱 Mobil uyumlu
 - 🔍 Oyun detay modal'ları
@@ -12,6 +13,7 @@ Modern, responsive ve şık bir Game Developer portfolyo sitesi. Unity ve diğer
 - 🎯 Smooth scrolling
 - 🌟 Scroll animasyonları
 - 📧 İletişim bölümü
+- ✨ Parallax efektleri
 
 ## 🚀 Kurulum
 
@@ -95,32 +97,33 @@ Contact section'ındaki bilgileri güncelleyin:
 </div>
 ```
 
-## 🎯 Özelleştirme Seçenekleri
+## 🎯 Tema Özelleştirme
 
-### Renk Teması
+### Renk Paleti
 
-`styles.css` dosyasında ana renkleri değiştirebilirsiniz:
-
-```css
-:root {
-    --primary-color: #3498db;
-    --secondary-color: #2c3e50;
-    --accent-color: #e74c3c;
-}
-```
-
-### Font Değiştirme
-
-Google Fonts'tan yeni font seçebilirsiniz:
-
-```html
-<link href="https://fonts.googleapis.com/css2?family=YeniFont:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-```
+Mevcut mavi-mor tema renkleri:
 
 ```css
-body {
-    font-family: 'YeniFont', sans-serif;
-}
+/* Ana renkler */
+--primary-blue: #4a90e2;
+--primary-purple: #9b59b6;
+--gradient-blue: #667eea;
+--gradient-purple: #764ba2;
+```
+
+### Gradient Efektleri
+
+Farklı gradient kombinasyonları deneyebilirsiniz:
+
+```css
+/* Hero section için */
+background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #4a90e2 100%);
+
+/* Butonlar için */
+background: linear-gradient(135deg, #4a90e2, #9b59b6);
+
+/* Kartlar için */
+background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
 ```
 
 ### Animasyon Hızı
@@ -146,17 +149,18 @@ Site otomatik olarak mobil cihazlara uyumludur. Ek özelleştirmeler için:
 ## 🔧 Teknik Detaylar
 
 - **HTML5**: Semantic markup
-- **CSS3**: Flexbox, Grid, Animations
+- **CSS3**: Flexbox, Grid, Animations, Gradients
 - **JavaScript**: ES6+, Intersection Observer API
 - **Responsive**: Mobile-first approach
 - **Performance**: Optimized images, lazy loading
+- **Theme**: Blue-Purple gradient design
 
 ## 📂 Dosya Yapısı
 
 ```
 portfolio/
 ├── index.html          # Ana sayfa
-├── styles.css          # CSS stilleri
+├── styles.css          # CSS stilleri (mavi-mor tema)
 ├── script.js           # JavaScript fonksiyonları
 ├── README.md           # Bu dosya
 └── images/             # Görseller (oluşturun)
@@ -191,6 +195,50 @@ if (heroTitle) {
 
 Parallax efektini kapatmak için `script.js` dosyasındaki ilgili bölümü yorum satırı yapın.
 
+### Gradient Animasyonları
+
+Daha dinamik gradient efektleri için CSS'e ekleyebilirsiniz:
+
+```css
+.hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #4a90e2 100%);
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+```
+
+## 🌈 Tema Varyasyonları
+
+### Koyu Tema
+
+Koyu tema için CSS değişkenlerini güncelleyin:
+
+```css
+:root {
+    --bg-primary: #1a1a2e;
+    --bg-secondary: #16213e;
+    --text-primary: #ffffff;
+    --text-secondary: #e8f4fd;
+}
+```
+
+### Neon Efektleri
+
+Neon efektleri eklemek için:
+
+```css
+.game-card {
+    box-shadow: 0 0 20px rgba(74, 144, 226, 0.3);
+    border: 1px solid rgba(74, 144, 226, 0.2);
+}
+```
+
 ## 📞 Destek
 
 Herhangi bir sorunuz varsa veya özelleştirme konusunda yardıma ihtiyacınız olursa:
@@ -204,4 +252,4 @@ Bu proje MIT lisansı altında lisanslanmıştır.
 
 ---
 
-**Not**: Bu site Game Developer'lar için özel olarak tasarlanmıştır. Unity, Unreal Engine ve diğer oyun geliştirme teknolojileri için optimize edilmiştir. 
+**Not**: Bu site Game Developer'lar için özel olarak tasarlanmıştır. Mavi-mor gradient tema ile modern ve profesyonel bir görünüm sunar. Unity, Unreal Engine ve diğer oyun geliştirme teknolojileri için optimize edilmiştir.
