@@ -330,3 +330,17 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+/* Akan arka plan */
+@keyframes flowingBackground {
+    0%, 100% { transform: translateX(0) translateY(0) scale(1); opacity: 0.8; }
+    25% { transform: translateX(-20px) translateY(-10px) scale(1.1); opacity: 1; }
+    50% { transform: translateX(10px) translateY(-20px) scale(0.9); opacity: 0.6; }
+    75% { transform: translateX(-15px) translateY(10px) scale(1.05); opacity: 0.9; }
+}
+
+/* Akan çizgiler */
+@keyframes flowingLines {
+    0% { transform: translateX(-100%) translateY(-100%); }
+    100% { transform: translateX(100%) translateY(100%); }
+}
