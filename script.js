@@ -2,31 +2,31 @@
 const gamesData = {
     1: {
         title: "Space Shooter",
-        description: "Uzayda geçen aksiyon dolu bir shooter oyunu. Düşman uzay gemilerini yok ederek puan kazanın ve hayatta kalmaya çalışın. Modern grafik efektleri ve sürükleyici oynanış deneyimi sunar.",
-        image: "https://via.placeholder.com/300x200/4a90e2/ffffff?text=Space+Shooter",
-        technologies: ["Unity", "C#", "2D Graphics", "Audio System", "Particle Effects"],
-        link: "https://example.com/space-shooter"
+        description: "Uzayda geçen aksiyon dolu bir shooter oyunu. Düşman uzay gemilerini yok ederek puan kazanın ve hayatta kalmaya çalışın. Modern grafik efektleri, parçacık sistemleri ve sürükleyici oynanış deneyimi sunar. Farklı silah türleri, güçlendiriciler ve boss savaşları ile uzun saatler boyunca eğlence garantisi.",
+        image: "https://via.placeholder.com/400x300/4a90e2/ffffff?text=Space+Shooter",
+        technologies: ["Unity", "C#", "2D Graphics", "Audio System", "Particle Effects", "Power-ups"],
+        link: "https://play.google.com/store/apps/details?id=com.example.spaceshooter"
     },
     2: {
         title: "Platform Runner",
-        description: "Platform üzerinde koşma ve zıplama oyunu. Engelleri aşarak mümkün olduğunca uzağa gitmeye çalışın. Fizik tabanlı oynanış ve akıcı animasyonlar ile eğlenceli bir deneyim.",
-        image: "https://via.placeholder.com/300x200/9b59b6/ffffff?text=Platform+Runner",
-        technologies: ["Unity", "C#", "Physics System", "Animation", "Level Design"],
-        link: "https://example.com/platform-runner"
+        description: "Platform üzerinde koşma ve zıplama oyunu. Engelleri aşarak mümkün olduğunca uzağa gitmeye çalışın. Fizik tabanlı oynanış, akıcı animasyonlar ve çeşitli karakterler ile eğlenceli bir deneyim. Her seviyede yeni zorluklar ve gizli bölgeler keşfedin.",
+        image: "https://via.placeholder.com/400x300/9b59b6/ffffff?text=Platform+Runner",
+        technologies: ["Unity", "C#", "Physics System", "Animation", "Level Design", "Character Controller"],
+        link: "https://apps.apple.com/app/platform-runner/id123456789"
     },
     3: {
         title: "Puzzle Adventure",
-        description: "Beyin jimnastiği gerektiren puzzle oyunu. Mantık ve strateji kullanarak bulmacaları çözün. Karmaşık seviye tasarımı ve zorlayıcı görevler ile oyuncuları test eder.",
-        image: "https://via.placeholder.com/300x200/3498db/ffffff?text=Puzzle+Adventure",
-        technologies: ["Unity", "C#", "UI System", "Save System", "Game Logic"],
-        link: "https://example.com/puzzle-adventure"
+        description: "Beyin jimnastiği gerektiren puzzle oyunu. Mantık ve strateji kullanarak bulmacaları çözün. Karmaşık seviye tasarımı, zorlayıcı görevler ve hikaye anlatımı ile oyuncuları test eder. Her puzzle çözüldüğünde yeni hikaye parçaları açılır.",
+        image: "https://via.placeholder.com/400x300/3498db/ffffff?text=Puzzle+Adventure",
+        technologies: ["Unity", "C#", "UI System", "Save System", "Game Logic", "Story System"],
+        link: "https://itch.io/game/puzzle-adventure"
     },
     4: {
         title: "Racing Game",
-        description: "Hızlı ve heyecanlı yarış oyunu. Diğer yarışçıları geçerek birinci olmaya çalışın. 3D grafikler, gerçekçi fizik ve çok oyunculu mod ile sürükleyici bir deneyim.",
-        image: "https://via.placeholder.com/300x200/8e44ad/ffffff?text=Racing+Game",
-        technologies: ["Unity", "C#", "3D Graphics", "Multiplayer", "Vehicle Physics"],
-        link: "https://example.com/racing-game"
+        description: "Hızlı ve heyecanlı yarış oyunu. Diğer yarışçıları geçerek birinci olmaya çalışın. 3D grafikler, gerçekçi fizik, çok oyunculu mod ve özelleştirilebilir araçlar ile sürükleyici bir deneyim. Farklı pistler ve hava koşulları ile her yarış benzersiz.",
+        image: "https://via.placeholder.com/400x300/8e44ad/ffffff?text=Racing+Game",
+        technologies: ["Unity", "C#", "3D Graphics", "Multiplayer", "Vehicle Physics", "Weather System"],
+        link: "https://store.steampowered.com/app/123456/racing-game"
     }
 };
 
