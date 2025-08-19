@@ -1,32 +1,32 @@
 // Oyun verileri
 const gamesData = {
     1: {
-        title: "Space Shooter",
-        description: "Uzayda geçen aksiyon dolu bir shooter oyunu. Düşman uzay gemilerini yok ederek puan kazanın ve hayatta kalmaya çalışın. Modern grafik efektleri, parçacık sistemleri ve sürükleyici oynanış deneyimi sunar. Farklı silah türleri, güçlendiriciler ve boss savaşları ile uzun saatler boyunca eğlence garantisi.",
-        image: "https://via.placeholder.com/400x300/4a90e2/ffffff?text=Space+Shooter",
-        technologies: ["Unity", "C#", "2D Graphics", "Audio System", "Particle Effects", "Power-ups"],
-        link: "https://play.google.com/store/apps/details?id=com.example.spaceshooter"
+        title: "Wheel Of Fortune Mini Game",
+        description: "Unity ile geliştirilmiş çarkıfelek mini oyunu. Oyuncular çarkı çevirerek çeşitli ödüller kazanabilir. Modern UI tasarımı ve akıcı animasyonlar ile eğlenceli bir deneyim sunar.",
+        image: "https://via.placeholder.com/400x300/4a90e2/ffffff?text=Wheel+Of+Fortune",
+        technologies: ["Unity", "C#", "2D Graphics", "UI System", "Animation", "Game Logic"],
+        link: "https://github.com/Dogukaninc/WheelOfFortune"
     },
     2: {
-        title: "Platform Runner",
-        description: "Platform üzerinde koşma ve zıplama oyunu. Engelleri aşarak mümkün olduğunca uzağa gitmeye çalışın. Fizik tabanlı oynanış, akıcı animasyonlar ve çeşitli karakterler ile eğlenceli bir deneyim. Her seviyede yeni zorluklar ve gizli bölgeler keşfedin.",
-        image: "https://via.placeholder.com/400x300/9b59b6/ffffff?text=Platform+Runner",
-        technologies: ["Unity", "C#", "Physics System", "Animation", "Level Design", "Character Controller"],
-        link: "https://apps.apple.com/app/platform-runner/id123456789"
+        title: "Hyper Casual Runner",
+        description: "Hyper casual tarzında koşma oyunu. Engelleri aşarak mümkün olduğunca uzağa gitmeye çalışın. Basit ama bağımlılık yapıcı oynanış ile mobil oyuncular için ideal.",
+        image: "https://via.placeholder.com/400x300/9b59b6/ffffff?text=Hyper+Casual+Runner",
+        technologies: ["Unity", "C#", "Mobile Development", "Physics", "Simple Controls"],
+        link: "https://github.com/Dogukaninc/HyperCasualRunner"
     },
     3: {
-        title: "Puzzle Adventure",
-        description: "Beyin jimnastiği gerektiren puzzle oyunu. Mantık ve strateji kullanarak bulmacaları çözün. Karmaşık seviye tasarımı, zorlayıcı görevler ve hikaye anlatımı ile oyuncuları test eder. Her puzzle çözüldüğünde yeni hikaye parçaları açılır.",
-        image: "https://via.placeholder.com/400x300/3498db/ffffff?text=Puzzle+Adventure",
-        technologies: ["Unity", "C#", "UI System", "Save System", "Game Logic", "Story System"],
-        link: "https://itch.io/game/puzzle-adventure"
+        title: "Match And Squash",
+        description: "3D eşleştirme ve ezme oyunu. Renkli küpleri eşleştirerek puan kazanın ve stratejik düşünme becerilerinizi geliştirin. 3D grafikler ve çok seviyeli oynanış.",
+        image: "https://via.placeholder.com/400x300/3498db/ffffff?text=Match+And+Squash",
+        technologies: ["Unity", "C#", "3D Graphics", "Match-3 Logic", "Level Design"],
+        link: "https://github.com/Dogukaninc/MatchAndSquash"
     },
     4: {
-        title: "Racing Game",
-        description: "Hızlı ve heyecanlı yarış oyunu. Diğer yarışçıları geçerek birinci olmaya çalışın. 3D grafikler, gerçekçi fizik, çok oyunculu mod ve özelleştirilebilir araçlar ile sürükleyici bir deneyim. Farklı pistler ve hava koşulları ile her yarış benzersiz.",
-        image: "https://via.placeholder.com/400x300/8e44ad/ffffff?text=Racing+Game",
-        technologies: ["Unity", "C#", "3D Graphics", "Multiplayer", "Vehicle Physics", "Weather System"],
-        link: "https://store.steampowered.com/app/123456/racing-game"
+        title: "2D Platformer Sample",
+        description: "2D platformer oyunu için hızlı prototipleme ve öğrenme şablonu. Temel platformer mekanikleri, karakter kontrolü ve seviye tasarımı ile oyun geliştirmeye başlamak için mükemmel.",
+        image: "https://via.placeholder.com/400x300/8e44ad/ffffff?text=2D+Platformer",
+        technologies: ["Unity", "C#", "2D Platformer", "Character Controller", "Level Design"],
+        link: "https://github.com/Dogukaninc/2D-PlatformerSample"
     }
 };
 

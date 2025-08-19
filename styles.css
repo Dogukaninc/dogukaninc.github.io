@@ -803,6 +803,33 @@ body {
     color: #9ca3af;
 }
 
+.contact-link {
+    color: #9ca3af;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.contact-link:hover {
+    color: #3b82f6;
+    transform: translateX(5px);
+}
+
+.contact-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background: linear-gradient(135deg, #3b82f6, #9333ea);
+    transition: width 0.3s ease;
+}
+
+.contact-link:hover::after {
+    width: 100%;
+}
+
 /* Footer */
 .footer {
     background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 100%);
