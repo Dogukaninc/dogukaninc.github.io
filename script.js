@@ -153,31 +153,44 @@ function initializeGameCards() {
     const modal = document.getElementById('gameModal');
     const closeModal = document.querySelector('.close-modal');
 
+    console.log('Game cards found:', gameCards.length);
+    console.log('Modal found:', modal);
+    console.log('Close button found:', closeModal);
+
     gameCards.forEach(card => {
         card.addEventListener('click', () => {
+            console.log('Game card clicked!');
             const gameId = card.getAttribute('data-game');
+            console.log('Game ID:', gameId);
             openGameModal(gameId);
         });
     });
 
     // Modal kapatma
-    closeModal.addEventListener('click', () => {
-        modal.style.display = 'none';
-        document.body.style.overflow = 'auto';
-    });
+    if (closeModal) {
+        closeModal.addEventListener('click', () => {
+            console.log('Close button clicked');
+            modal.classList.remove('show');
+            document.body.style.overflow = 'auto';
+        });
+    }
 
     // Modal dışına tıklayarak kapatma
-    modal.addEventListener('click', (e) => {
-        if (e.target === modal) {
-            modal.style.display = 'none';
-            document.body.style.overflow = 'auto';
-        }
-    });
+    if (modal) {
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                console.log('Modal background clicked');
+                modal.classList.remove('show');
+                document.body.style.overflow = 'auto';
+            }
+        });
+    }
 
     // ESC tuşu ile kapatma
     document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && modal.style.display === 'block') {
-            modal.style.display = 'none';
+        if (e.key === 'Escape' && modal && modal.classList.contains('show')) {
+            console.log('ESC key pressed');
+            modal.classList.remove('show');
             document.body.style.overflow = 'auto';
         }
     });
@@ -185,8 +198,12 @@ function initializeGameCards() {
 
 // Modal açma fonksiyonu
 function openGameModal(gameId) {
+    console.log('Opening modal for game:', gameId);
     const gameData = gamesData[gameId];
-    if (!gameData) return;
+    if (!gameData) {
+        console.error('Game data not found for ID:', gameId);
+        return;
+    }
 
     const modal = document.getElementById('gameModal');
     const modalImage = document.getElementById('modalGameImage');
@@ -194,6 +211,15 @@ function openGameModal(gameId) {
     const modalDescription = document.getElementById('modalGameDescription');
     const modalTechnologies = document.getElementById('modalTechnologies');
     const modalLink = document.getElementById('modalGameLink');
+
+    console.log('Modal elements found:', {
+        modal: modal,
+        image: modalImage,
+        title: modalTitle,
+        description: modalDescription,
+        technologies: modalTechnologies,
+        link: modalLink
+    });
 
     // Modal içeriğini doldur
     modalImage.src = gameData.image;
@@ -212,7 +238,8 @@ function openGameModal(gameId) {
     });
 
     // Modal'ı göster
-    modal.style.display = 'block';
+    console.log('Showing modal');
+    modal.classList.add('show');
     document.body.style.overflow = 'hidden';
 }
 
@@ -330,17 +357,3 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
-
-/* Akan arka plan */
-@keyframes flowingBackground {
-    0%, 100% { transform: translateX(0) translateY(0) scale(1); opacity: 0.8; }
-    25% { transform: translateX(-20px) translateY(-10px) scale(1.1); opacity: 1; }
-    50% { transform: translateX(10px) translateY(-20px) scale(0.9); opacity: 0.6; }
-    75% { transform: translateX(-15px) translateY(10px) scale(1.05); opacity: 0.9; }
-}
-
-/* Akan çizgiler */
-@keyframes flowingLines {
-    0% { transform: translateX(-100%) translateY(-100%); }
-    100% { transform: translateX(100%) translateY(100%); }
-}
